@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Fixed seed for reproducibility
 np.random.seed(42)
@@ -47,15 +48,32 @@ for i in range(num_vehicles):
 # Create DataFrame
 results_df = pd.DataFrame({
     'Vehicle': [f'V{i+1}' for i in range(num_vehicles)],
-    'Delay (ms)': delays.round(2),
-    'PDR': pdrs.round(3),
-    'Trust': trusts.round(3),
-    'Ambulance': ambulance_flags,
-    'Crash Alert': crash_alert_flags,
-    'Road Hazard': road_hazard_flags,
-    'Tier': tiers,
     'QoS Score': np.round(qos_scores, 3),
     'Reward Score': reward_scores
 })
 
 print(results_df)
+
+# Plotting QoS Scores line graph
+plt.figure(figsize=(10, 5))
+plt.plot(results_df['Vehicle'], results_df['QoS Score'], marker='o', linestyle='-', color='blue', label='QoS Score')
+plt.title('QoS Scores per Vehicle (Fixed Reward Strategy)')
+plt.xlabel('Vehicle')
+plt.ylabel('QoS Score')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+# Plotting Reward Scores line graph
+plt.figure(figsize=(10, 5))
+plt.plot(results_df['Vehicle'], results_df['Reward Score'], marker='s', linestyle='-', color='green', label='Reward Score')
+plt.title('Reward Scores per Vehicle (Fixed Reward Strategy)')
+plt.xlabel('Vehicle')
+plt.ylabel('Reward Score')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
