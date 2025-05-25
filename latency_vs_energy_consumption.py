@@ -15,7 +15,6 @@ for i, label in enumerate(labels):
     plt.annotate(label, (latency[i], energy[i]), textcoords="offset points", xytext=(5,-10), ha='center')
 plt.xlabel('Average Latency (ms)')
 plt.ylabel('Average Energy Consumption (Joules)')
-plt.title('Latency vs. Energy Consumption Trade-off in Q-Learning')
 plt.grid(True)
 plt.tight_layout()
 plt.show()

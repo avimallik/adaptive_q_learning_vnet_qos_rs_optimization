@@ -12,12 +12,11 @@ x = np.arange(len(lri_bins_labels))  # label locations
 width = 0.35  # width of the bars
 
 fig, ax = plt.subplots(figsize=(9,5))
-rects1 = ax.bar(x - width/2, reliability_q_learning, width, label='Q-Learning Model', color='blue')
+rects1 = ax.bar(x - width/2, reliability_q_learning, width, label='Q-APERF Model', color='blue')
 rects2 = ax.bar(x + width/2, reliability_baseline, width, label='Baseline Static Model', color='red')
 
 ax.set_xlabel('Link Reliability Index (LRI)')
 ax.set_ylabel('Message Reliability (%)')
-ax.set_title('Message Reliability vs. Wireless Link Quality')
 ax.set_xticks(x)
 ax.set_xticklabels(lri_bins_labels)
 ax.set_ylim(40, 105)

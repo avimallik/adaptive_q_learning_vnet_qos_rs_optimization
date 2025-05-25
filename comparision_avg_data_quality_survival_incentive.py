@@ -15,7 +15,6 @@ rects2 = ax.bar(x, avg_survival, width, label='Average Survival')
 rects3 = ax.bar(x + width, avg_swdi, width, label='Average SWDI')
 
 ax.set_xlabel('Incentive Mechanism')
-ax.set_title('Average Data Quality, Survival, and SWDI Comparison')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()
