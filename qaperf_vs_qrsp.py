@@ -40,5 +40,5 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
-plt.suptitle('Figure 7.12: Accuracy and Reward Comparison Between Q-APERF and Q-RSP', y=1.02)
+# plt.suptitle('Figure 7.12: Accuracy and Reward Comparison Between Q-APERF and Q-RSP', y=1.02)
 plt.show()
