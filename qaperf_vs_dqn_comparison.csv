@@ -1,3 +1,3 @@
 Model,Final Policy Accuracy (%),Final Avg. Reward,Convergence Episode
-Q-APERF,88.0,9.5,1140
+Q-APERF,86.0,9.5,1144
 DQN-Heuristic,71.7,7.93,0
