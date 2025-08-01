@@ -1,5 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
 
 # Simulated delay samples (ms) for demonstration purposes
 np.random.seed(42)

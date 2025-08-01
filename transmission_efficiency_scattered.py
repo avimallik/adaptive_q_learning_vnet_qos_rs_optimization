@@ -1,4 +1,9 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
+
 
 plr = [5, 10, 20, 30, 40]
 ate_q_learning = [96.8, 94.2, 89.5, 82.1, 75.4]

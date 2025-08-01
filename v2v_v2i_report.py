@@ -1,5 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
 
 # LRI bins as labels
 lri_bins_labels = ['0.8–1.0', '0.6–0.8', '0.4–0.6', '0.2–0.4', '<0.2']

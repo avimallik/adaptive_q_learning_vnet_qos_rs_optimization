@@ -1,4 +1,8 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
 
 # Average latency (ms)
 latency = [45.3, 54.7, 63.8, 77.4, 92.1]

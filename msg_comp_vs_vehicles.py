@@ -1,4 +1,8 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
 
 # Network sizes
 vehicle_counts = [100, 300, 500, 700, 1000]

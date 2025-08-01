@@ -1,5 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
+
 
 # Assume tracking_rewards and tracking_accuracy are collected from your Q-learning training
 # Example arrays (replace with your actual training logs)

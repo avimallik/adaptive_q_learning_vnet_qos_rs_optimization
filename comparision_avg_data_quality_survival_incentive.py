@@ -1,5 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib as mpl
+
+mpl.rcParams['font.family'] = 'Times New Roman'
+mpl.rcParams['font.size'] = 14
 
 labels = ['FRI', 'QAI', 'SII (Proposed)']
 avg_quality = [0.72, 0.85, 0.78]
